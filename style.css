@@ -1,0 +1,78 @@
+:root {--primary-color: black; --secondary-color: white; --medium-color: #8b8b8b; --max-width: 1280px;}
+body {font-family: 'Times New Roman', Times, serif; color: white; line-height: 1.4;}
+a {text-decoration: none;}
+.container1 {padding: 0 2rem; max-width: var(--max-width); overflow: hidden; margin: auto;}
+html {scroll-behavior: smooth;}
+
+
+#main-nav {display: flex; align-items: center; justify-content: space-between; background-color: #2a2b2a; color: #fff; width: 100%;
+    height: 70px; position: fixed; top: 0px; padding: 0 30px; z-index: 2 !important; 
+   transition: 0.5s; padding-bottom: 1.5rem;}
+   
+   #main-nav h1 {margin-bottom: 0; padding: 2.2rem 0 0.5rem;}  
+ #main-nav .menu-wrap input {visibility: hidden;}
+ #main-nav ul {display: flex; list-style-type: none; list-style: none;}  
+ #main-nav ul li a {padding: 0.7rem; font-weight: bold; color: #fff; margin: 0 0.5rem; transition: all 0.3s;}
+ #main-nav ul li a:hover {background: white; color: black;}
+ 
+ /* java scroll*/
+ .navbar.top {background: rgb(36, 36, 36) !important;}
+ 
+ .menu-wrap {color: white;} 
+ 
+ /*HOME A*/
+ #home-a { position: relative;}
+ #home-a .div {top: 30%; display: grid; grid-template-columns: 1fr 2fr; align-items: center; text-align: center;
+    border-bottom-right-radius: 15%; border-bottom-left-radius: 15%; background: #2a2b2a; justify-content: center; display: flex;}
+ #home-a .div .column-one img {border-radius: 50%; color: white; height: 450px; width: 450px}
+ #home-a .div .column-two h1 {padding-right: 3px; font-size: 5rem; width: 100%; width: 95%;}
+ .type {overflow: hidden; animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite; margin: 0 auto;}
+ @keyframes typing {from {width: 0} to {width: 100%}}
+ 
+
+ /*HOME B*/
+#home-b {background: white; color: black; position: relative; width: 100%;}
+#home-b .container .title {color: black; text-align: center; font-size: 3rem;}
+#home-b .div {position:relative; height: 500px; display: grid; grid-template-columns:repeat(2, 1fr); align-items: center; text-align: center;}
+#home-b .div .column-one p {padding: 1px; font-size: 1.4rem; width: 100%; color: var(--medium-color);}
+#home-b .div .column-two img {height: 500px; width: 450px;}
+
+
+
+/*HOME C*/
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+#home-c {background: #2a2b2a; position: relative; padding: 4rem 0;}
+#home-c::before {content: ""; position: absolute; top: 0; left: 0; height: 100%; width: 100%; background: url(../image/smile.jpg) no-repeat center 55% / cover; opacity: 0.2; background-attachment: fixed;}
+#home-c .container{position: relative; z-index: 1; margin: 2rem;}
+#home-c .container div {width: 70%;}
+#home-c .container div h3 {color: whitesmoke; font-size: 3rem;}
+#home-c .container div p {padding: 1px; width: 100%; color: whitesmoke; margin-top: 1rem;}
+
+
+/*Home D*/
+#home-d {background-color: #f8f8f8f8;}
+#home-d .container .title {color: black; text-align: center; font-size: 3rem;}
+#home-d .grid {display: grid; grid-template-columns: repeat(2, 1fr); padding: 2rem; box-sizing: border-box; margin: 2rem; text-align: center;}
+#home-d .grid .item {border: 1px dotted gray; text-align: center;}
+#home-d .grid .item i {font-size: 2.5rem; color: grey; margin-top: 0.5rem;}
+#home-d .grid .item h3 {color: black; text-align: center; font-size: 1.3rem; padding: 1rem 0.5rem;}
+#home-d .grid p {padding: 1px; font-size: 1.1rem; width: 100%; color: var(--medium-color); align-items: center;}
+
+
+
+/*FOOTER*/
+#footer {background: #2a2b2a;}
+#footer .footer-grid {display: grid; grid-template-columns: repeat(3, 1fr); padding: 2rem;}
+#footer .footer-grid .column1 {color: white;}
+#footer .footer-grid .column2 {color: white;}
+#footer .footer-grid .column1 p i,
+#footer .footer-grid .column2 p i {margin-left: 1rem; font-size: 1.3rem;}
+#footer .footer-grid .column3 {color: white; text-align:center; margin: 0 1rem; height: 10vh;}
+#footer .footer-grid .column3 a {color: white; text-align: center; margin: 0 1rem;}
+#footer .footer-grid .column3 a:hover {color: black; font-size: 2rem; transition: all 0.8s ease-in-out;}
